@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/alfom.png','imagenes/palmas.png','imagenes/alfombra.png')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>SEMANA SANTA</h1>
+  </div>
+    <div>
+    <center>
+    <img src="imagenes/semana santa1.png" width="480" height="480">
+    </center>
+  </div>
+   
+<div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>SIGNIFICADO DE LA SEMANA SANTA</h2>
+     </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DOMINGO DE PASCUA</h2>
+      </a>
+     </li>
+       <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>COMO SE ESTABLECE LA SEMANA SANTA</h2>
+     </a>
+      </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>CELEBRACION EN ATLIXCO</h2>
+    </a>
+   </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>IZTAPALAPA</h2>
+     </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>VATICANO</h2>
+     </a>
+      </li>
+       <li class="ui-first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>JERUSALEM</h2>
+     </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>ESTADOS UNIDOS</h2>
+     </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Mariana Arantza Suarez Vazquez</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>SIGNIFICADO</h1>
+     </div>
+    <div data-role="content" align="center">
+     <div>
+      <img src="imagenes/semana.png" width="280" height="280"></div>
+   </div>
+   <div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h2>mas informacion</h2>
+        <h2>La Semana Santa es la conmemoración anual cristiana de la Pasión, Muerte y Resurrección de Jesús de Nazaret. Por eso, es un período de intensa actividad litúrgica dentro de las diversas confesiones cristianas. Da comienzo el Domingo de Ramos y finaliza el Domingo de Resurrección,aunque su celebración suele iniciarse en varios lugares el viernes anterior (Viernes de Dolores) y se considera parte de la misma el Domingo de Resurrección. La fecha de la celebración es variable (entre marzo y abril según el año) ya que depende del calendario lunar.</h2>
+        <center>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/alfom.png',1)"><img src="imagenes/semana santa1.png" width="448" height="299" id="Image24"></a>
+        </center>
+        <h2>La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasión donde se celebra la eucaristía en el Jueves Santo, se conmemora la Crucifixión de Jesús el Viernes Santo y la Resurrección en la Vigilia Pascual durante la noche del Sábado Santo al Domingo de Resurrección. Durante la Semana Santa tienen lugar numerosas muestras de religiosidad popular a lo largo de todo el mundo, destacando las procesiones y las representaciones de la Pasión.</h2>
+        <center>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/palmas.png',1)"><img src="imagenes/semana santa1.png" width="448" height="299" id="Image25"></a>
+        </center>
+        <h2>Los días más importantes de la Semana Santa son los formados por el llamado Triduo Pascual: La introducción al Triduo (el Jueves Santo y el Viernes Santo), en el que se conmemora la muerte de Cristo; Sábado Santo, en el que se conmemora a Cristo en el sepulcro, y el Domingo de Pascua de la Resurrección.</h2>
+        <center>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/alfombra.png',1)"><img src="imagenes/semana santa1.png" width="448" height="299" id="Image26"></a>
+        </center>
+        <h2>JUEVES SANTO:
+        Este día recordamos la Última Cena de Jesús con sus apóstoles en la que les lavó los pies dándonos un ejemplo de servicialidad. En la Última Cena, Jesús se quedó con nosotros en el pan y en el vino, nos dejó su cuerpo y su sangre. Es el jueves santo cuando instituyó la Eucaristía y el Sacerdocio. Al terminar la última cena, Jesús se fue a orar, al Huerto de los Olivos. Ahí pasó toda la noche y después de mucho tiempo de oración, llegaron a aprehenderlo.</h2>
+        <h2>VIERNES SANTO:
+        Ese día recordamos la Pasión de Nuestro Señor: Su prisión, los interrogatorios de Herodes y Pilato; la flagelación, la coronación de espinas y la crucifixión. Lo conmemoramos con un Via Crucis solemne y con la ceremonia de la Adoración de la Cruz.</h2>
+    </div>
+    <div data-role="footer" data-theme="a">
+      <h4>Aplicacion Dos, Mariana Arantza Suarez Vazquez</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>DOMINGO DE PASCUA</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+      <img src="imagenes/Pascua.png" width="280" height="280"></div>
+   </div>
+    <div>
+    <div data-role="collapsible" data-content-theme="false">
+    <h2> Resurreccion </h2>
+      <h2>La Pascua también llamada Pascua Florida, Domingo de Pascua, Domingo de Resurrección o Domingo de Gloria― es la fiesta central del cristianismo, en la que se conmemora, de acuerdo con los evangelios canónicos, la resurrección de Jesús al tercer día después de haber sido crucificado.</h2>
+    
+   <div>
+      <h2>El Domingo de Pascua es una celebración que no se fija en relación al calendario civil. 2 El Primer Concilio de Nicea (año 325) estableció la fecha de la Pascua como el primer domingo después de la luna llena tras elequinoccio de primavera en el hemisferio norte.8 La fecha por tanto, varía entre el 22 de marzo y el 25 de abril.9 10 El cristianismo oriental basa sus cálculos en el calendario juliano, por lo que su fecha se sitúa entre el4 de abril y 8 de mayo.</h2>
+    </div>
+    </div>
+    </div>
+    
+    <div data-role="footer" data-theme="a">
+       <h4>Aplicacion Dos, Mariana Arantza Suarez Vazquez</h4>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>COMO SE ESTABLECE LA SEMANA SANTA</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h2>Como esta establecida</h2>
+      <h2>Es muy común dentro de los detractores de la Iglesia Católica, tanto creyentes como no creyentes, engañar insinuando que la Iglesia Católica coloca la fecha de la Cuaresma justo apenas terminan los Carnavales como una forma de querer limpiar toda la idolatría y el desenfreno vivido en esas fiestas. Argumentan que el miércoles de Ceniza es sólo el querer "tapar" los pecados, y utilizan un texto bíblico para considerar pagano el uso de esta fiesta.</h2>
+   
+   <div>
+      <h2>Se celebraría el primer domingo después de la Luna llena que coincida o que suceda al equinoccio de primavera del hemisferio norte y en caso de que la Luna llena tuviera lugar en domingo, la Pascua se traslada al siguiente.</h2>
+   </div>
+   </div>
+   </div>
+  <div data-role="footer" data-theme="a">
+      <h4>Aplicacion Dos, Mariana Arantza Suarez Vazquez</h4>
+   </div>
+  </div>
+ </div>
+ 
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>CELEBRACION EN ATLIXCO</h1>
+ </div>
+ <div data-role="content" align="center">
+    <div>
+    <div data-role="collapsible" data-content-theme="false">
+    <h2> Atlixco </h2>
+      <h2>A unos días de que inicie la temporada de semana santa en el Municipio de Atlixco, se llevarán a cabo diferentes actividades, iniciando este domingo veinte de marzo y culminando el veintisiete de marzo, domingo de resurrección. Se celebrarán misas, procesiones y confesiones, así lo dio a conocer Lucio Sánchez del Razo, párroco de  la iglesia de San Francisco.</h2>
+    
+    
+    
+     <img src="imagenes/atlixco.png" width="50%" height="50%">
+  
+  
+      <h2>Ya como es tradicional en la iglesia católica, la semana mayor, la semana santa inicia con el domingo de ramos. Queremos celebrar o conmemorar la entrada triunfal de Jesús a Jerusalén, entonces aquí nosotros vamos hacer misas el domingo. En esta parroquia de la asunción, vamos a llevar a cabo la bendición de las palmas.</h2>
+    
+    
+    
+     <img src="imagenes/a1.png" width="50%" height="50%">
+ 
+      <h2>Mencionó que como cada año también se llevarán a cabo los ya tradicionales engrillados que recorren las principales calles del municipio de Atlixco con pesadas cadenas y espinas clavadas en el cuerpo. Esto tendrá lugar el día viernes santo a las diez de la mañana, partiendo de la iglesia de la tercera orden.</h2>
+    
+     <img src="imagenes/a2.png" width="50%" height="50%">
+  
+      <h2>Es una labor que la iglesia debe apoyar, porque es un acto penitencial el que ellos hacen y para ello se preparan. Creo que es una ofrenda agradable al señor porque es un sacrificio de reconciliación con Dios, pidiéndole perdón por sus pecados y ofreciéndole este acto penitenciario”, señaló el párroco.</h2>
+ 
+     <img src="imagenes/a3.png" width="50%" height="50%">
+  
+  
+  
+      <h2>Finalmente invitó a todos los feligreses a participar de estas actividades que con el paso de los años, asegura, se han ido perdiendo.</h2>
+   
+     <img src="imagenes/a4.png" width="50%" height="50%">
+  </div>
+    </div>
+    </div>
+ <div data-role="footer" data-theme="a">
+    <h4>Aplicacion Dos, Mariana Arantza Suarez Vazquez</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>IZTAPALAPA</h1>
+  </div>
+ <div data-role="content" align="center">
+  <div>
+    <h2>SEMANA SANTA EN IZTAPALAPA LA MÁS GRANDE DEMOSTRACION DE AMOR Y FE!</h2>
+    <h2>Iztapalapa, pueblo prehispánico, milenario con arraigo en sus tradiciones y con un linaje que hace una comunidad con orgullo, desde nuestros ancestros hasta el presente, siempre un pueblo rico en cultura y en una tradición religiosa desde la ceremonia del fuego nuevo hasta el presente  con la Representación de la Vida, Pasión, Muerte, Resurrección y Ascensión de Cristo.</h2>
+  </div>
+  
+  <div>
+     <img src="imagenes/iz1.png" width="50%" height="50%">
+  </div>
+  
+  <div>
+    <h2>Es la semana santa la que desde 1843 motiva el interés y la participación de sus habitantes siendo esta tradición una expresión de fe y que defiende su cultura, tradiciones y acervo religioso a través de los siglos.</h2>
+  </div>
+  
+  <div>
+     <img src="imagenes/iztapalapa.png" width="50%" height="50%">
+  </div>
+  
+  <div>
+    <h2>Año con año niños, jóvenes, adultos y ancianos de los 8 barrios tradicionalistas: San Lucas, Santa Bárbara, San Ignacio, San pablo, San José, San Pedro, La Asunción y San Miguel salen a las calles motivados por la fe a compartir con el mundo la representación de Semana Santa en Iztapalapa transformando sus calles, jardines y templos en el escenario idóneo para representar el suceso que cambio la historia de la Humanidad conjugando así un abanico de motivaciones y sentimientos humanos llevando consigo el valor de una tradición..</h2>
+  </div>
+  
+   <div>
+     <img src="imagenes/santa.png" width="50%" height="50%">
+  </div>
+  
+  <div>
+    <h2>Año con año niños, jóvenes, adultos y ancianos de los 8 barrios tradicionalistas: San Lucas, Santa Bárbara, San Ignacio, San pablo, San José, San Pedro, La Asunción y San Miguel salen a las calles motivados por la fe a compartir con el mundo la representación de Semana Santa en Iztapalapa transformando sus calles, jardines y templos en el escenario idóneo para representar el suceso que cambio la historia de la Humanidad conjugando así un abanico de motivaciones y sentimientos humanos llevando consigo el valor de una tradición.</h2>
+  </div>
+   
+ <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Dos, Mariana Arantza Suarez Vazquez</h4>
+   </div>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>VATICANO</h1>
+ </div>
+ <div data-role="content" align="center">
+    <div>
+      <h2>En el domingo de ramos de 1985, Juan Pablo II dedicó una carta apostólica a los jóvenes y ese mismo año instituyó las Jornadas Mundiales de la Juventud (JMJ), que se realizaron en Roma por primera vez al año siguiente, con la participación de chicos de todo el mundo. </h2>
+      </div>
+      
+      <div>
+      <img src="imagenes/va1.png" width="50%" height="50%">
+      </div>
+      
+       <div>
+      <h2>La II JMJ tuvo lugar en 1987 en el marco de la recordada visita que el papa polaco hizo a laArgentina, y desde entonces se realiza en distintos países (Francia, Canadá, Alemania, Australia, España fueron las últimas sedes). </h2>
+      </div>
+      
+      <div>
+      <img src="imagenes/va2.png" width="50%" height="50%">
+      </div>
+      
+      <div>
+      <h2>Este año será el turno será de Brasil, donde la jornadas que convocan multitudes de jóvenes de todo el mundo se congregarán en  Río de Janeiro del 23 al 28 de julio, y se espera que el papa Francisco participe de ellas, convirtiéndose en su primer viaje internacional como pontífice. </h2>
+      </div>
+      
+      <div>
+      <img src="imagenes/va3.png" width="50%" height="50%">
+      </div>
+      
+
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>JERUSALEM</h1>
+ </div>
+ <div data-role="content" align="center">
+    <div>
+    <h2>Si hay un lugar en el mundo en que la mayoría de las personas coinciden en llamar santo, ese es Jerusalém.</h2>
+    </div>
+    
+    <div>
+      <img src="imagenes/je1.png" width="50%" height="50%">
+    </div>
+    
+    <div>
+    <h2>Sucede que las tres principales religiones monoteístas (judaísmo, cristianismo e islam) la consideran una tierra sagrada. De hecho, su mismo nombre significa "Ciudad de Paz" en hebreo o "La Santa" en árabe.</h2>
+    </div>
+    
+     <div>
+      <img src="imagenes/je2.png" width="50%" height="50%">
+    </div>
+    
+     <div>
+    <h2>Por eso no es de extrañarse que la capital de Israel -que fue declarada Patrimonio de la Humanidad por la UNESCO en 1981- reviva cada año en la Semana Santa.
+Miles de turistas -principalmente cristianos que recuerdan la Pasión de Cristo- llegan a la ciudad para celebrar los días que transcurren entre el Domingo de Ramos (que recuerda la entrada triunfal de Jesús en Jerusalén) y Pascua (la resurrección del Señor, luego de su muerte en la cruz).
+</h2>
+    </div>
+    
+    <div>
+      <img src="imagenes/je3.png" width="50%" height="50%">
+    </div>
+    
+  </div>
+ <div data-role="footer" data-theme="a">
+    <h4>Aplicacion Dos, Mariana Arantza Suarez Vazquez</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Estados Unidos</h1>
+ </div>
+ <div data-role="content" align="center">
+    <div>
+      <h2>En Nueva York, por ejemplo, existen algunas hermandades que intentan mantener la tradición religiosa. En la Catedral de San Patricio se encuentra un Cristo Negro, la Hermandad que lo custodia y le rinde culto atrae a una buena cantidad de migrantes guatemaltecos y centroamericanos.</h2>
+      </div>
+      
+      <img src="imagenes/es1.png" width="50%" height="50%">
+      
+      <div>
+      <h2>En California, debido a la gran cantidad de inmigrantes hispanos, las tradiciones religiosas cristianas encuentran más espacio para desarrollarse. Allí se celebrar el Vía Crucis viviente, es decir, la representación teatral de la pasión de Jesucristo que, cada año, atrae a más fieles, principalmente guatemaltecos y salvadoreños, dos pueblos con una profunda tradición cristiana.</h2>
+      </div>
+      
+      
+      <img src="imagenes/es2.png" width="50%" height="50%">
+      
+     </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+    <h4>Aplicacion Dos, MASV</h4>
+  </div>
+ </div>
+</div>
+
+ 
+</body>
+</html>
